@@ -1,0 +1,101 @@
+/* responsive */
+
+/* features page responsive */
+/* tablet */
+@media screen and (max-width: 1264px){
+    .features_page{
+        height: 85vh;
+    }
+    .features_page .heading{
+        height: 15%;
+    }
+    .features_page .heading h2{
+        font-size: 2.3rem;
+    }
+    .features_container{
+        height: 85%;
+    }
+    .features_container {
+        height: 64vh !important;
+    }
+}
+/* tablet */
+    
+/* mobile  */
+    @media screen and (max-width: 977px){
+        .features_page .heading h2{
+            font-size: 2rem;
+        }
+        .content .banner_heading h2{
+            font-size: 1.8rem;
+        }
+        .content .banner_heading p{
+            font-size: 1.3rem;
+        }
+        .features_content{
+            width: 40rem;
+            overflow: scroll;
+        }
+        .features_content::-webkit-scrollbar{
+            width: 0;
+        }
+        .banner_div{
+            min-width: 40rem;
+        }
+        /* animation for features content upon hitting this breakpoint */
+        .features_content .banner_div{
+            position: relative;
+            animation: features_slide 12s linear 2s infinite forwards;
+        }
+        @keyframes features_slide {
+        
+            0%{
+                left: 0%;
+            }
+            10%{
+                left: 0%;
+            }
+            20%{
+                left: -100%;
+            }
+            40%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            60%{
+                left: -200%;
+            }
+            70%{
+                left: -100%;
+            }
+            80%{
+                left: -100%;
+            }
+            90%{
+                left: 0%;
+            }
+            100%{
+                left: 0%;
+            } 
+        }
+        /* animation for features content upon hitting this breakpoint */
+    }
+    @media screen and (max-width: 403px){
+        .content .banner_heading h2{
+            font-size: 1.6rem;
+        }
+        .content .banner_heading p{
+            font-size: 1.3rem;
+        }
+        .features_content{
+            width: 28rem;
+        }
+        .banner_div{
+            min-width: 28rem;
+        }
+    }
+/* mobile  */
+/* features page responsive  */
+/* responsive */

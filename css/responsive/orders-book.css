@@ -1,0 +1,137 @@
+@media screen and (max-width: 1403px) {
+    .left-box{
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+    .left-box .scooter{
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+    .left-box .orange-box{
+        width: 30%;
+        height: 30%;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -40%);
+    }
+    .left-box .food-box{
+        top: 30%;
+        right: 15%;
+        transform: translateY(-30%);  
+    }
+    .left-box .food-box{
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+    }
+    .right-box .order-box{
+        width: 80%;
+    }
+    .right-box .order-box h3{
+        font-size: 1.8rem;
+    }
+    .right-box .order-box .item-info .food-form p{
+        font-size: 1.3rem;
+    }
+    .right-box .order-box .item-info .food-form .quantity{
+        /* background-color: aquamarine; */
+        height: 6%;
+    }
+    .right-box .order-box .item-info .food-form .quantity label{
+        font-size: 1.3rem;
+    }
+    .right-box .order-box .item-info .food-form .quantity input{
+        width: 55%;
+        padding-left: 1rem;
+    }
+    .right-box .order-box .item-info .food-form .total{
+        height: 6%;
+    }
+    .right-box .order-box .item-info .food-form .total label{
+        font-size: 1.3rem;
+    }
+    .right-box .order-box .item-info .food-form .total input{
+        width: 60%;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+    }
+    .right-box .order-box .item-info .food-form .address{
+        height: 6%;
+    }
+    .right-box .order-box .item-info .food-form .address label{
+        font-size: 1.3rem;
+    }
+    .right-box .order-box .item-info .food-form .address input{
+        font-size: 1.3rem;
+        width: 74%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ordersbooking .booking-container{
+        flex-direction: column;
+    }
+    .ordersbooking{
+        width: 100%;
+        height: 150vh;
+        position: relative;
+    }
+    .blur{
+        height: 150vh;
+    }
+    .ordersbooking .booking-container{
+        height: 150vh;
+    }
+    .left-box{
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+    .right-box{
+        width: 100%;
+        height: 50%;
+    }
+    .right-box .order-box{
+        width: 80%;
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .right-box .order-box .order-btn .submit{
+        font-size: 1.3rem;
+        padding: 0.3rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .right-box .order-box h3{
+        font-size: 1.6rem;
+    }
+    .right-box .order-box .item-info .food-form p{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .item-info .food-form .quantity label{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .item-info .food-form .total label{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .item-info .food-form .total input{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .item-info .food-form .address label{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .item-info .food-form .address input{
+        font-size: 1.1rem;
+    }
+    .right-box .order-box .order-btn .submit{
+        font-size: 1rem;
+        padding: 0.3rem 1.5rem;
+    }
+    
+}

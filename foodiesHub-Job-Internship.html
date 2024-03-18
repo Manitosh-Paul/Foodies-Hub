@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodies Hub Apply for Job/Internship</title>
+    <link rel="stylesheet" href="css/intern.css" />
+    <link rel="stylesheet" href="css/responsive/internres.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- internship form  -->
+      <section class="job_container">
+        <div class="bg_img">
+          <img src="images/job-bg.jpg" alt="" />
+        </div>
+        <form
+          action=""
+          class="form-container d-flex"
+          onsubmit="return validjob()"
+        >
+          <div class="details">
+            <div class="d-flex">
+              <label for="f1">Name <span style="color: red">*</span></label>
+              <input
+                type="text"
+                name="f1"
+                id="f1"
+                placeholder="Enter full name"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f2"
+                >Phone Number <span style="color: red">*</span></label
+              >
+              <input
+                type="tel"
+                name="f2"
+                id="f2"
+                placeholder="Enter Phone/Mobile number"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f3"
+                >Date of Birth <span style="color: red">*</span></label
+              >
+              <input
+                type="date"
+                name="f3"
+                max="2013-12-31"
+                id="f3"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f4"
+                >Education <span style="color: red">*</span></label
+              >
+              <select name="f4" id="f4" required>
+                <option value="" disabled selected>
+                  Enter education details.....
+                </option>
+                <option value="1">Not studied</option>
+                <option value="2">Below Matriculation</option>
+                <option value="3">Matriculation</option>
+                <option value="4">Intermediate</option>
+                <option value="5">Under Graduate</option>
+                <option value="6">Post Graduate</option>
+              </select>
+            </div>
+            <div class="d-flex">
+              <label for="f5"
+                >Intrested <span style="color: red">*</span></label
+              >
+              <select name="f5" id="f5" required>
+                <option value="" disabled selected>Want to work as.....</option>
+                <option value="1">Database Engineer</option>
+                <option value="2">Manager</option>
+                <option value="3">Accountant</option>
+                <option value="4">Host/Hostess</option>
+                <option value="5">Cook</option>
+                <option value="6">Waiter</option>
+                <option value="7">Delivery Boy</option>
+                <option value="8">Kitchen porter</option>
+              </select>
+            </div>
+          </div>
+          <div class="details">
+            <div class="d-flex">
+              <label for="f6"
+                >Experience <span style="color: red">*</span></label
+              >
+              <input
+                type="number"
+                name="f6"
+                id="f6"
+                placeholder="Enter work experience in years"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f7">Outlet <span style="color: red">*</span></label>
+              <input
+                type="text"
+                name="f7"
+                id="f7"
+                placeholder="Where want to work within Durgapur....."
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f8">Gender <span style="color: red">*</span></label>
+              <select name="f8" id="f8" required>
+                <option value="" disabled selected>Your gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Others</option>
+              </select>
+            </div>
+            <div class="d-flex">
+              <label for="f9"
+                >Marital Status <span style="color: red">*</span></label
+              >
+              <select name="f9" id="f9" required>
+                <option value="" disabled selected>Enter your status</option>
+                <option value="1">Bachelor</option>
+                <option value="2">Married</option>
+                <option value="3">Widowed</option>
+                <option value="4">Divorced</option>
+              </select>
+            </div>
+            <div class="d-flex">
+              <label for="f10">Email Id</label>
+              <input
+                type="email"
+                name="f10"
+                id="f10"
+                placeholder="Enter email"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="details">
+            <div class="d-flex">
+              <label for="f11"
+                >Address1 <span style="color: red">*</span></label
+              >
+              <input
+                type="text"
+                name="f11"
+                id="f11"
+                placeholder="House No./Flat No./Apartment Name"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f12"
+                >Address2 <span style="color: red">*</span></label
+              >
+              <input
+                type="text"
+                name="f12"
+                id="f12"
+                placeholder="Town/Locality/Pincode"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f13"
+                >Address3 <span style="color: red">*</span></label
+              >
+              <input
+                type="text"
+                name="f13"
+                id="f13"
+                placeholder="City"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <label for="f14">State <span style="color: red">*</span></label>
+              <input
+                type="text"
+                name="f14"
+                id="f14"
+                placeholder="State"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- internship form  -->
+      <!-- footer page  -->
+      <footer class="d-flex item-center">
+        <!-- links and mail container -->
+        <div class="content d-flex item-center">
+          <!-- social media links  -->
+          <div class="d-flex item-center">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://in.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://www.pinterest.com/" target="_blank">Pinintrest</a>
+          </div>
+          <!-- social media links  -->
+
+          <!-- quick links -->
+          <div class="d-flex item-center">
+            <a href="index.html">Home</a>
+            <a href="index.html#features_page">Features</a>
+            <a href="index.html#get_started_page">Get Started</a>
+            <a href="index.html#contact_page">Birthday/Party Booking</a>
+            <a href="foodiesHub-Login_signup.html">Login</a>
+          </div>
+          <!-- quick links -->
+
+          <!-- contact through email -->
+          <div class="d-flex item-center">
+            <h5>Contact us through</h5>
+            <a href="mailto:contact@puzzle.com">contact@foodieshub.com</a>
+          </div>
+          <!-- contact through email -->
+        </div>
+        <!-- links and mail container -->
+
+        <!-- copyright container  -->
+        <div class="copyright">
+          <div>Foodies Hub &copy;<span> manitosh paul </span> 2021</div>
+        </div>
+        <!-- copyright container  -->
+      </footer>
+      <!-- footer page  -->
+    </div>
+
+    <script>
+      const phone = document.getElementById("f2");
+      const email = document.getElementById("f10");
+      var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+      var eid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      let fg1 = 0;
+      let fg2 = 0;
+      function validjob() {
+        if (phone.value.match(phoneno)) {
+          fg1 = 1;
+        } else {
+          alert("Invalid Phone Number");
+          fg1 = 0;
+        }
+        if (
+          !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)
+        ) {
+          alert("Invalid Email");
+          fg2 = 0;
+        } else {
+          fg2 = 1;
+        }
+        if (fg1 == 1 && fg2 == 1) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

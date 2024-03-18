@@ -1,0 +1,220 @@
+/*Variables*/
+:root{
+    --primary: #fd5f20;
+    --secondary: #090058;
+    --bg: #dbdbdb;
+    --pure: #fff;
+}
+/*Variables*/
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cursive;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+/* Reset css */
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* scroll bar design  */
+.container::-webkit-scrollbar{
+    width: 0.5rem;
+}
+.container::-webkit-scrollbar-thumb{
+    background: var(--primary);
+}
+.container::-webkit-scrollbar-track{
+    background-color: var(--pure);
+}
+.container::-webkit-scrollbar-button{
+    display: none;
+}
+/* scroll bar design  */
+
+/* utility classes */
+.linear_grad{
+    background: linear-gradient(to top right, #cf235c,#ff8c09,#faaa15, #fded05, #cf235c); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.d-flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+/* utility classes */
+
+/* nav section  */
+.menu-nav{
+    max-width: 2000px;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    background: var(--pure);
+}
+.menu-nav nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu-nav nav .logo{
+    width: 50%;
+    height: 100%;
+}
+.menu-nav nav .logo h3{
+    font-size: 3.3rem;
+    margin-left: 3rem;
+}
+.menu-nav nav .explore{
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+}
+.menu-nav nav .explore button{
+    margin-right: 3rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--pure);
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.menu-nav nav .explore button:hover{
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+/* nav section  */
+
+/* browse menu  */
+.menu-items{
+    z-index: 999;
+    position: absolute;
+    top: 6vh;
+    width: 20%;
+    height: 40rem;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    transition: 0.3s linear;
+}
+
+.menu-items ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-items ul li a{
+    color: var(--pure);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-items ul li a:hover{
+    background-color: var(--primary);
+}
+
+.active{
+    background-color: var(--primary);
+}
+/* browse menu  */
+
+/* menu section  */
+.menu-list-container{
+    max-width: 2000px;
+    height: auto;
+    top: 10vh;
+    padding-bottom: 2rem;
+    position: relative;
+    justify-content: center;
+}
+.menu-list{
+    width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-auto-rows: 18rem;
+    gap: 4rem;
+}
+
+.menu-list .foods{
+    position: relative;
+    background-color: var(--pure);
+    box-shadow: 0 1.3rem 0.7rem -1rem var(--primary);
+    border-left: 0.2rem solid var(--primary);
+}
+
+.menu-list .foods .food-info{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.menu-list .foods .food-info .food-name{
+    height: 40%;
+}
+
+.menu-list .foods .food-info .food-name h3{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.menu-list .foods .food-info .food-price{
+    height: 20%;
+}
+
+.menu-list .foods .food-info .food-price h3,span{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+
+.menu-list .foods .food-info .order-btn{
+    height: 40%;
+}
+
+.menu-list .foods .food-info .order-btn a{
+    display: flex;
+    background: var(--primary);
+    color: var(--pure);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+}
+
+.menu-list .foods .food-img{
+    width: 40%;
+    height: 100%;
+    background-color: #faaa15;
+}
+
+.menu-list .foods .food-img img{
+    width: 100%;
+    height: 100%;
+}
+/* menu section  */
+
+

@@ -1,0 +1,121 @@
+@media screen and (max-width: 1418px) {
+    .sidebar_menu {
+        width: 25rem;
+    }
+
+    .close_sidebar {
+        width: 3.5%;
+        padding: 0.8rem 1rem;
+        left: 25rem;
+    }
+
+    .move_close_sidebar {
+        left: 0;
+    }
+
+    .notif {
+        width: 30%;
+    }
+
+    .admin_profile {
+        width: 40%;
+    }
+
+    .dashboard_content {
+        width: 70%;
+        left: 28rem;
+    }
+
+    .dashboard_content_width {
+        width: 100%;
+        left: 0;
+    }
+
+    .logo_container h3 {
+        font-size: 2.4rem;
+    }
+
+    .sub_heading h4 {
+        font-size: 1.4rem;
+    }
+
+    .current_info p {
+        font-size: 1.2rem;
+    }
+
+    .filter_cal {
+        width: 100%;
+    }
+
+    .filter_cal .date_filter p {
+        font-size: 1.2rem;
+    }
+
+    .filter_periods {
+        width: 50%;
+    }
+
+    .current_info {
+        width: 50%;
+    }
+
+    .filter_cal .cal_icon img {
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+        width: 55%;
+        height: 60%;
+    }
+
+    .filter_cal .date_filter .from_to_dates input {
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+    .filter_cal .date_filter .from_to_dates button {
+        padding: 0rem 0.5rem;
+    }
+
+    .dash_common_style {
+        width: 95%;
+    }
+
+    .admin_profile .name {
+        font-size: 1.4rem;
+    }
+
+    .admin_profile .photo {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+}
+
+@media screen and (max-width: 931px) {
+    .sidebar_menu {
+        /* width: 50%; */
+        left: -70rem;
+        opacity: 0;
+        z-index: 10;
+        box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .hide_sidebar_menu {
+        width: 50%;
+        left: 0;
+        opacity: 1;
+    }
+
+    .close_sidebar {
+        left: 0;
+    }
+
+
+    .move_close_sidebar {
+        left: 50%;
+    }
+
+    .dashboard_content {
+        width: 100%;
+        left: 0rem;
+    }
+}

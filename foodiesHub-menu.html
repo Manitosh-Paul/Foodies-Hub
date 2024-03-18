@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel="stylesheet" href="css/responsive/menu.css">
+    <title>Foodies Hub-Starters Veg</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu-nav">
+            <nav class="d-flex item-center">
+                <div class="logo linear_grad d-flex item-center">
+                    <h3>Foodies Hub</h3>
+                </div>
+                <div class="explore d-flex item-center">
+                    <button id="btn">Browse Menu</button>
+                </div>
+            </nav>
+            <div class="menu-items" id="menu" style="right: -65rem;">
+                <ul class="d-flex">
+                    <li><a href="#" class="active">Starters Veg</a></li>
+                    <li><a href="#">Starters Non Veg</a></li>
+                    <li><a href="#">Rolls</a></li>
+                    <li><a href="#">Momo</a></li>
+                    <li><a href="#">Lachha</a></li>
+                    <li><a href="#">Rice Veg</a></li>
+                    <li><a href="#">Rice Non Veg</a></li>
+                    <li><a href="#">Hakka Noodles Veg</a></li>
+                    <li><a href="#">Hakka Noodles Non Veg</a></li>
+                    <li><a href="#">Chinese Veg</a></li>
+                    <li><a href="#">Chinese Non Veg</a></li>
+                    <li><a href="#">Main Course Veg</a></li>
+                    <li><a href="#">Main Course Non Veg</a></li>
+                    <li><a href="#">Biryani</a></li>
+                    <li><a href="#">Combo</a></li>
+                    <li><a href="#">Soup</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="menu-list-container d-flex">
+            <div class="menu-list">
+                <div class="foods d-flex">
+                    <div class="food-info d-flex">
+                        <div class="food-name d-flex item-center">
+                            <h3>Salad</h3>
+                        </div>
+                        <div class="food-price d-flex item-center">
+                            <span>Price: </span>
+                            <h3>30/- Rs.</h3>
+                        </div>
+                        <div class="order-btn d-flex item-center">
+                            <a href="orders-booking.html">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="food-img">
+                        <img src="images/Starters Veg.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="foods d-flex">
+                    <div class="food-info d-flex">
+                        <div class="food-name d-flex item-center">
+                            <h3>Salad</h3>
+                        </div>
+                        <div class="food-price d-flex item-center">
+                            <span>Price: </span>
+                            <h3>30/- Rs.</h3>
+                        </div>
+                        <div class="order-btn d-flex item-center">
+                            <a href="orders-booking.html">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="food-img">
+                        <img src="images/Starters Veg.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="foods d-flex">
+                    <div class="food-info d-flex">
+                        <div class="food-name d-flex item-center">
+                            <h3>Salad</h3>
+                        </div>
+                        <div class="food-price d-flex item-center">
+                            <span>Price: </span>
+                            <h3>30/- Rs.</h3>
+                        </div>
+                        <div class="order-btn d-flex item-center">
+                            <a href="orders-booking.html">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="food-img">
+                        <img src="images/Starters Veg.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="foods d-flex">
+                    <div class="food-info d-flex">
+                        <div class="food-name d-flex item-center">
+                            <h3>Salad</h3>
+                        </div>
+                        <div class="food-price d-flex item-center">
+                            <span>Price: </span>
+                            <h3>30/- Rs.</h3>
+                        </div>
+                        <div class="order-btn d-flex item-center">
+                            <a href="orders-booking.html">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="food-img">
+                        <img src="images/Starters Veg.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    var explore = document.getElementById('btn');
+    explore.addEventListener('click', function () {
+        var menu = document.getElementById('menu')
+        if (menu.style.right == '-65rem') {
+            menu.style.right = '3rem'
+        }
+        else {
+            menu.style.right = '-65rem'
+        }
+    })
+
+    const menu = document.querySelectorAll('#menu>ul>li>a');
+
+    menu.forEach(a => {
+        a.addEventListener('click', function () {
+            menu.forEach(menu_items => menu_items.classList.remove('active'));
+            this.classList.add('active');
+        })
+    })
+
+
+
+</script>
+
+</html>

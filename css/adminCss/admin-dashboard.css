@@ -1,0 +1,392 @@
+/*Variables*/
+:root {
+    --primary: #fd5f20;
+    --secondary: #090058;
+    --bg: #dbdbdb;
+    --pure: #fff;
+}
+
+/*Variables*/
+
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+/* Reset css */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 100vh;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+}
+
+/* scroll bar design  */
+.container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: var(--pure);
+}
+
+.container::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* scroll bar design  */
+
+/* utility classes */
+.linear_grad {
+    background: linear-gradient(to top right, #cf235c, #ff8c09, #faaa15, #fded05, #cf235c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.shadow-b {
+    box-shadow: 0 1.3rem 0.7rem -1rem rgb(54, 54, 54);
+}
+
+.shadow-t {
+    box-shadow: 0 -1.3rem 0.7rem -1rem rgb(54, 54, 54);
+}
+
+.heading {
+    position: absolute;
+    top: 6vh;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+}
+
+.heading h2 {
+    position: relative;
+}
+
+.heading h2::before {
+    position: absolute;
+    content: '';
+    width: 6rem;
+    height: 0.2rem;
+    bottom: 0;
+    left: 40%;
+    background-color: var(--secondary);
+}
+
+/* utility classes */
+
+/* dashboard styling */
+.dashboard_container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff2ed;
+}
+
+.sidebar_menu {
+    width: 30rem;
+    height: 100%;
+    background-color: var(--pure);
+    border-left: 3px solid var(--primary);
+    border-top-right-radius: 1rem;
+    opacity: 1;
+    position: fixed;
+}
+
+.hide_sidebar_menu {
+    left: -70rem;
+    opacity: 0;
+}
+
+.close_sidebar {
+    cursor: pointer;
+    z-index: 10;
+    width: 3%;
+    flex-direction: column;
+    position: absolute;
+    top: 3%;
+    left: 30rem;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.toggle_arrow {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s linear;
+}
+
+.move_close_sidebar {
+    left: 0;
+}
+
+.active_toggle_sidebar {
+    transform: rotate(180deg);
+}
+
+.logo_container {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+}
+
+.logo_container h3 {
+    font-size: 2.5rem;
+}
+
+.sub_heading {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.sub_heading h4 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+/* dashboard content */
+.dashboard_content {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    left: 30rem;
+    background: transparent;
+    transition: 0.1s linear;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.notifications {
+    width: 100%;
+    height: 8%;
+    justify-content: flex-end;
+}
+
+.notif {
+    width: 20%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.notif .ntf {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem;
+    background-color: #b8b6c2;
+    border-radius: 0.5rem;
+}
+
+.bell .count {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1rem;
+    left: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary);
+    color: var(--pure);
+    border-radius: 50%;
+}
+
+.notif .ntf img {
+    width: 100%;
+    height: auto;
+}
+
+.notif .od_cm {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem;
+    background-color: #bbec6c;
+    border-radius: 0.5rem;
+}
+
+.notif .od_cm img {
+    width: 100%;
+    height: auto;
+}
+
+.admin_profile {
+    width: 30%;
+    height: 100%;
+    justify-content: space-around;
+    border-left: 2px solid var(--primary);
+    box-shadow: 0 1.3rem 0.7rem -1rem var(--primary);
+}
+
+.admin_profile .name {
+    font-size: 1.5rem;
+}
+
+.admin_profile .name span {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.admin_profile .photo {
+    border: 1px solid var(--primary);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.dashboard_content_width {
+    width: 100%;
+    left: 0;
+}
+
+.dashboard {
+    width: 100%;
+    height: 92%;
+    background: transparent;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #dbdbdb; */
+}
+
+.dash_common_style {
+    width: 95%;
+}
+
+.page_info {
+    height: 10%;
+    justify-content: space-between;
+}
+
+.current_info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.current_info h2 {
+    font-size: 1.5rem;
+}
+
+.current_info p {
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+
+.filter_periods {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.filter_cal {
+    width: 60%;
+    height: 90%;
+    background-color: var(--pure);
+    border-radius: 0.5rem;
+    display: flex;
+    box-shadow: 0 0 15px 10px rgba(255, 122, 122, 0.1);
+}
+
+.filter_cal .cal_icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_cal .cal_icon img {
+    padding: 0.5rem;
+    background-color: #d3fff4;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 70%;
+}
+
+.filter_cal .date_filter {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filter_cal .date_filter p {
+    font-size: 1.3rem;
+}
+
+.filter_cal .date_filter .from_to_dates {
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter_cal .date_filter .from_to_dates input {
+    width: 10rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    color: var(--secondary);
+}
+
+.filter_cal .date_filter .from_to_dates button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.number_overview {
+    height: 20%;
+    background-color: #bbec6c;
+}
+
+.pie_charts {
+    height: 30%;
+    background-color: #cf235c;
+}
+
+.bar_graphs {
+    height: 30%;
+    background-color: #fd5f20;
+}
+
+/* dashboard styling */

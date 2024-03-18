@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #aa00ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.two{
+    background-color: #00b8d4;
+}
+.three{
+    background-color: #c51162;
+}
+.four{
+    background-color: #00bfa5;
+}

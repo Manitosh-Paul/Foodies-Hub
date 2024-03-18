@@ -1,0 +1,270 @@
+/*Variables*/
+:root{
+    --primary: #fd5f20;
+    --secondary: #090058;
+    --bg: #dbdbdb;
+    --pure: #fff;
+}
+/*Variables*/
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cursive;
+}
+/* Reset css */
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 100vh;
+}
+body{
+    background-color: var(--bg);
+}
+.container{
+    background-color: var(--pure);
+}
+/* utility classes */
+.linear_grad{
+    background: linear-gradient(to top right, #cf235c,#ff8c09,#faaa15, #fded05, #cf235c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.d-flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+.div-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* utility classes */
+
+/* form background */
+.bg_img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* img  */
+.bg_img img{
+    width: 100%;
+    height: 100%;
+}
+/* img  */
+/* black overlay and blur*/
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    backdrop-filter: blur(1.5rem);
+}
+/* black overlay and blur*/
+/* form background */
+/* close button  */
+.cancel{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+.cancel:hover{
+    border: none;
+    background-color: var(--primary);
+}
+.cancel div{
+    width: 0.4rem;
+    height: 3.5rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.5rem;
+    left: 2.3rem;
+}
+.cancel div:nth-child(1){
+    transform: rotate(45deg);
+}
+.cancel div:nth-child(2){
+    transform: rotate(-45deg);
+}
+/* close button  */
+/* form styling */
+.form_container{
+    width: 25%;
+    height: 60%;
+    background-color: var(--pure);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* login signup buttons */
+.btns{
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+.btncontainer{
+    width: 50%;
+    height: 55%;
+    box-shadow: 0 0 1rem 0.5rem var(--primary);
+}
+.move{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.btncontainer button{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+}
+.btncontainer button:nth-of-type(1){
+    left: 0;
+}
+.btncontainer button:nth-of-type(2){
+    left: 50%;
+}
+.btncontainer button:nth-of-type(1):hover, .btncontainer button:nth-of-type(2):hover{
+    font-size: 1.5rem;
+}
+/* login signup buttons */
+
+/* login and signup forms  */
+.log_in, .sign_up{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+}
+.log_in div, .sign_up div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 8rem;
+    position: relative;
+}
+
+/* error message  */
+.log_in div p, .sign_up div p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+/* error message  */
+
+/* all input fields  */
+.log_in div input, .sign_up div input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+}
+/* all input fields  */
+
+/* all labels */
+.log_in div label, .sign_up div label{
+    color: var(--secondary);
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    font-size: 1.4rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+/* all labels */
+
+/* labels animation */
+.log_in div input:focus~label,
+.log_in div input:not(:placeholder-shown)~label{
+    top: 0;
+    transform: translateY(0);
+    left: 0;
+    font-size: 1.3rem;
+}
+.sign_up div input:focus~label,
+.sign_up div input:not(:placeholder-shown)~label{
+    top: 0;
+    transform: translateY(0);
+    left: 0;
+    font-size: 1.3rem;
+}
+/* labels animation */
+
+/* forgot password  */
+.log_in div a{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* forgot password  */
+.log_in div button, .sign_up div button{
+    width: 6rem;
+    height: 3rem;
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    color: var(--pure);
+    transition: all 0.3s ease-in-out;
+}
+.log_in div button:hover, .sign_up div button:hover{
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+.sign_up{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+}
+/* login and signup forms  */
+/* form styling */
+
+@media screen and(max-width: 1024px) {
+    .container{
+        display: none;
+    }
+}

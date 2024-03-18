@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminCss/admin-dashboard.css">
+    <link rel="stylesheet" href="../css/responsive/adminResponsiveCss/dashboard_admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Foodies Hub-Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard_container">
+            <div class="sidebar_menu">
+                <div class="logo_container linear_grad d-flex item-center">
+                    <h3>Foodies Hub</h3>
+                </div>
+                <div class="sub_heading d-flex item-center">
+                    <h4>Admin Dashboard</h4>
+                </div>
+            </div>
+            <div class="close_sidebar d-flex item-center">
+                <img src="../images/left-right-chevron.png" alt="" class="toggle_arrow">
+            </div>
+            <div class="dashboard_content d-flex">
+                <div class="notifications d-flex item-center">
+                    <div class="notif d-flex item-center">
+                        <a href="#" class="ntf bell">
+                            <div class="count">1</div><img src="../images/bell.png" alt="">
+                        </a>
+                        <a href="#" class="ntf msg"><img src="../images/message.png" alt=""></a>
+                        <a href="#" class="od_cm msg"><img src="../images/checked.png" alt=""></a>
+                    </div>
+                    <div class="admin_profile d-flex item-center">
+                        <div class="name">Hello, <span>Manitosh</span></div>
+                        <div class="photo"></div>
+                    </div>
+                </div>
+                <div class="dashboard d-flex">
+                    <div class="dash_common_style page_info d-flex">
+                        <div class="current_info">
+                            <h2>Dashboard</h2>
+                            <p>Hi, Manitosh, Welcome back to Foodies Hub Admin!</p>
+                        </div>
+                        <div class="filter_periods">
+                            <div class="filter_cal">
+                                <div class="cal_icon">
+                                    <img src="../images/24-hours.png" alt="">
+                                </div>
+                                <div class="date_filter">
+                                    <p>Filter Period</p>
+                                    <form action="" method="post" class="from_to_dates d-flex">
+                                        <input type="text" name="dt_from" id="dt_from" placeholder="Select date"
+                                            autocomplete="off" required>
+                                        <p>to</p>
+                                        <input type="text" name="dt_to" id="dt_to" placeholder="Select date"
+                                            autocomplete="off" required>
+                                        <button type="submit">></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash_common_style number_overview"></div>
+                    <div class="dash_common_style pie_charts"></div>
+                    <div class="dash_common_style bar_graphs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#dt_from", {
+            altInput: true,
+            altFormat: "M j, Y",
+        });
+        flatpickr("#dt_to", {
+            altInput: true,
+            altFormat: "M j, Y",
+        });
+    </script>
+</body>
+
+</html>

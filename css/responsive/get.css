@@ -1,0 +1,173 @@
+
+/* responsive */
+
+/* get started page responsive */
+/* tablet */
+@media screen and (max-width: 1355px){
+    .menuitems div:nth-child(1) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(2) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(3) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(4) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(5) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(6) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(7) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(8) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(9) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(10) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(11) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(12) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(13) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(14) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(15) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(16) a::after{
+        font-size: 0.8rem;
+    }
+    .menuitems div:nth-child(17) a::after{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .menuitems div:nth-child(2) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(13) a::after{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .get_started_page .heading h2{
+        font-size: 2rem;
+    }
+    .menuitems{
+        height: 98%;
+        top: 0;
+        transform: translate(-50%, 0%);
+        grid-template-rows: repeat(4, minmax(6rem, 1fr));
+        grid-template-columns: repeat(5, minmax(3rem, 1fr));
+        grid-gap: 3%;
+    }
+    .menuitems a::before{
+        height: 17%;
+    } 
+    .menuitems div:nth-child(1) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(2) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(4) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(5) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(6) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(7) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(8) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(9) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(10) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(11) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(12) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(13) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(14) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(15) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(16) a::after{
+        font-size: 0.7rem;
+    }
+    .menuitems div:nth-child(17) a::after{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 546px){
+    .get_started_page .heading{
+        top: 7vh;
+        height: 8vh;
+    }
+    .get_started_page .heading h2{
+        font-size: 1.7rem;
+    }
+    .menucontainer{
+        top: 15vh;
+        height: 85vh;
+    }
+    .menuitems{
+        height: 98%;
+        top: 0;
+        transform: translate(-50%, 0%);
+        grid-template-rows: repeat(6, minmax(6rem, 1fr));
+        grid-template-columns: repeat(3, minmax(3rem, 1fr));
+        grid-gap: 3%;
+    }
+    .menuitems a::before{
+        height: 25%;
+    }
+    .menuitems div:nth-child(2) a::after{
+        font-size: 0.5rem;
+    }
+    .menuitems div:nth-child(11) a::after{
+        font-size: 0.5rem;
+    }
+    .menuitems div:nth-child(13) a::after{
+        font-size: 0.5rem;
+    }
+}
+/* tablet */
+/* mobile  */
+@media screen and (max-width: 320px) {
+    .menuitems div:nth-child(1) a::after{
+        font-size: 0.7rem;
+    }
+}
+/* mobile  */
+/* get started page responsive  */
+/* responsive */

@@ -1,0 +1,43 @@
+@media screen and (max-width: 1024px) {
+    .form_container{
+        width: 35%;
+    }
+    .btncontainer button{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form_container{
+        width: 50%;
+    }
+    .btncontainer{
+        width: 70%;
+    }
+    .cancel{
+        width: 4rem;
+        height: 4rem;
+    }
+    .cancel div{
+        width: 0.2rem;
+        height: 2.5rem;
+        left: 1.9rem;
+    }
+    /* error message  */
+    .log_in div p, .sign_up div p{
+        font-size: 1.3rem;
+    }
+    /* error message  */
+}
+@media screen and (max-width: 426px) {
+    .form_container{
+        width: 80%;
+    }
+    .btncontainer{
+        width: 75%;
+    }
+    /* error message  */
+    .log_in div p, .sign_up div p{
+        font-size: 1.2rem;
+    }
+    /* error message  */
+}

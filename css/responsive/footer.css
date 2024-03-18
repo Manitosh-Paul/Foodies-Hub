@@ -1,0 +1,48 @@
+/* responsive */
+
+/* small size laptop */
+@media screen and (max-width: 1024px) {
+    footer .content div:nth-child(1), footer .content div:nth-child(2){
+        font-size: 1.3rem;
+    }
+    footer .content div:nth-child(3){
+        font-size: 1.3rem;
+    }
+    footer .copyright div{
+        font-size: 1.3rem;
+    }
+}
+/* small size laptop */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    footer .content div:nth-child(1), footer .content div:nth-child(2){
+        font-size: 1rem;
+    }
+    footer .content div:nth-child(3){
+        font-size: 1rem;
+    }
+    footer .copyright div{
+        font-size: 1rem;
+    }
+    footer .content::after{
+        width: 95%;
+    }
+}
+/* tablet */
+
+/* mobile phones */
+@media screen and (max-width: 425px) {
+    footer .content div:nth-child(1), footer .content div:nth-child(2){
+        font-size: 0.8rem;
+    }
+    footer .content div:nth-child(3){
+        font-size: 0.8rem;
+    }
+    footer .copyright div{
+        font-size: 0.9rem;
+    }
+}
+/* mobile phones */
+
+/* responsive */

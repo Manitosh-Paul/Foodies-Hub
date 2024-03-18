@@ -1,0 +1,242 @@
+/*Variables*/
+:root{
+    --primary: #fd5f20;
+    --secondary: #090058;
+    --bg: #dbdbdb;
+    --pure: #fff;
+}
+/*Variables*/
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cursive;
+}
+/* Reset css */
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* scroll bar design  */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--pure);
+}
+html::-webkit-scrollbar-button{
+    display: none;
+}
+/* scroll bar design  */
+
+/* utility classes */
+.d-flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+.shadow-b{
+    box-shadow: 0 1.3rem 0.7rem -1rem rgb(54, 54, 54);
+}
+.shadow-t{
+    box-shadow: 0 -1.3rem 0.7rem -1rem rgb(54, 54, 54);
+}
+.heading{
+    position: absolute;
+    top: 6vh;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+}
+.heading h2{
+    position: relative;
+}
+.heading h2::before{
+    position: absolute;
+    content: '';
+    width: 6rem;
+    height: 0.2rem;
+    bottom: 0;
+    left: 40%;
+    background-color: var(--secondary);
+}
+/* utility classes */
+
+/* job_container styling */
+.job_container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.job_container .bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.job_container .bg_img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.job_container .form-container{
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.job_container .form-container .details{
+    width: 32%;
+    height: 100%;
+}
+.job_container .form-container .details div{
+    width: 85%;
+    height: 20%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.job_container .form-container .details div label{
+    font-size: 1.7rem;
+    color: var(--pure);
+}
+.job_container .form-container .details div input, select{
+    margin-top: 0.5rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background: #cfcfcf;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+.job_container .form-container .details div button{
+    background-color: var(--pure);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    width: 7rem;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+.job_container .form-container .details div button:hover{
+    background: transparent;
+    color: var(--pure);
+    border: 1px solid var(--pure);
+}
+/* job_container styling */
+
+/* footer page styling */
+footer{
+    width: 100%;
+    height: 45vh;
+    background-color: var(--secondary);
+    flex-direction: column;
+    position: relative;
+}
+/* links and mail container styling */
+footer .content{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    justify-content: space-around;
+}
+/* hr line  */
+footer .content::after{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 0.1rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--pure);
+}
+/* hr line  */
+
+footer .content div{
+    width: 30%;
+    height: 100%;
+}
+/* social media links and quick links  */
+footer .content div:nth-child(1), footer .content div:nth-child(2){
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+footer .content div:nth-child(1) a, footer .content div:nth-child(2) a{
+    color: var(--pure);
+    transition: all 0.3s ease-in-out;
+}
+/* social media links and quick links  */
+
+/* email link  */
+footer .content div:nth-child(3){
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+footer .content div:nth-child(3) h5{
+    margin-top: 2rem;
+    color: var(--pure);
+}
+footer .content div:nth-child(3) a{
+    margin-top: 1rem;
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+/* email link  */
+
+/* hover effects */
+footer .content div:nth-child(1) a:hover, footer .content div:nth-child(2) a:hover{
+    color: var(--primary);
+    transform: translateX(1rem);
+}
+footer .content div:nth-child(3) a:hover{
+    color: var(--pure);
+    transform: translateX(1rem);
+}
+/* hover effects */
+/* links and mail container styling */
+
+/* copyright styling */
+footer .copyright{
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+footer .copyright div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #a5a5a5;
+}
+footer .copyright div span{
+    color: var(--primary);
+}
+/* copyright styling */
+/* footer page styling */

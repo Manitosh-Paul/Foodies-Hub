@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login-signup.css" />
+    <link rel="stylesheet" href="css/responsive/loginsignup.css" />
+    <title>Foodies Hub Login/Signup</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bg_img">
+        <img src="images/Login-signup-bg.png" alt="" class="img" />
+        <div class="overlay"></div>
+        <a href="index.html" class="cancel">
+          <div></div>
+          <div></div>
+        </a>
+        <!-- form container  -->
+        <div class="div-center d-flex form_container">
+          <!-- buttons -->
+          <div class="btns">
+            <!-- btncontainer -->
+            <div class="btncontainer div-center">
+              <div class="move" id="moves"></div>
+              <button type="button" id="login">Log in</button>
+              <button type="button" id="signup">Sign up</button>
+            </div>
+            <!-- btncontainer -->
+          </div>
+          <!-- buttons -->
+
+          <!-- loginsignup -->
+          <!-- login -->
+          <form action="" class="log_in d-flex item-center">
+            <div class="email">
+              <input
+                type="email"
+                name="log_email"
+                id="log_email"
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="log_email">Email</label>
+            </div>
+            <div class="password">
+              <input
+                type="password"
+                name="log_pass"
+                id="log_pass"
+                placeholder=" "
+              />
+              <label for="log_pass">Password</label>
+            </div>
+            <div class="forgot">
+              <a href="#">forgot password?</a>
+            </div>
+            <div class="submit">
+              <button type="submit" class="div-center">Log in</button>
+            </div>
+          </form>
+          <!-- login -->
+
+          <!-- signup -->
+          <form
+            action=""
+            class="sign_up d-flex item-center"
+            onsubmit="return signupvalidate()"
+          >
+            <div class="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" "
+                autocomplete="off"
+                required
+              />
+              <label for="email">Email</label>
+              <p id="e_e"></p>
+            </div>
+            <div class="password">
+              <input
+                type="password"
+                name="password"
+                id="pass"
+                placeholder=" "
+                required
+              />
+              <label for="pass">Password</label>
+              <p id="p_e"></p>
+            </div>
+            <div class="c_password">
+              <input
+                type="password"
+                name="c_password"
+                id="c_pass"
+                placeholder=" "
+                required
+              />
+              <label for="c_pass">Confirm Password</label>
+              <p id="cp_e"></p>
+            </div>
+            <div class="submit">
+              <button type="submit" class="div-center">Signup</button>
+            </div>
+          </form>
+          <!-- signup -->
+          <!-- loginsignup -->
+        </div>
+        <!-- form container  -->
+      </div>
+    </div>
+    <!-- javascript link  -->
+    <script src="js/loginsignup.js"></script>
+    <script src="js/signupverify.js"></script>
+    <!-- javascript link  -->
+  </body>
+</html>
